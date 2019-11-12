@@ -1,5 +1,5 @@
 import React from 'react'
-import classnames from 'classnames'
+import classNames from 'classnames'
 class Home extends React.Component {
     exampleMethod(){
         console.log("JS is running")
@@ -7,7 +7,7 @@ class Home extends React.Component {
     render(){
         return(
             <div>
-                <h1 classnames='component'>
+                <h1 className='component'>
                     My Home Page
                 </h1>
                 <p>Some Content</p>

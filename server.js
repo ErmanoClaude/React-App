@@ -4,7 +4,7 @@ import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import { StaticRouter } from 'react-router'
 import bodyParser from 'body-parser'
-
+import webConfig from './webConfig.json'
 
 import App from './src/app';
 
@@ -23,12 +23,14 @@ app.get('*',(req,res)=>{
     )
     const html =`
         <html>
-            <head></head>
+            <head>
+            <link href="${webConfig.siteURL}/assets/css/styles.min.css" rel="stylesheet" type="text/css" />
+            </head>
             <body>
                 <div id='root'>
                     ${ content }
                 </div>
-                <script src='client_bundle.js'></script>
+                <script src="${webConfig.siteURL}/client_bundle.js"></script>
             </body>
         </html>
     `;
