@@ -1,5 +1,5 @@
 import React from 'react'
-
+import classNames from 'classnames'
 class Home extends React.Component {
     exampleMethod(){
         console.log("JS is running")
