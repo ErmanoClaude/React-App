@@ -1,17 +1,14 @@
 import React from 'react'
-import classNames from 'classnames'
+import Navbar from '../components/navbarComponent'
+import MainContent from '../components/mainContentComponent'
 class Home extends React.Component {
-    exampleMethod(){
+    exampleMethod() {
         console.log("JS is running")
     }
-    render(){
-        return(
-            <div>
-                <h1 className='component'>
-                    My Home Page
-                </h1>
-                <p>Some Content</p>
-                <button onClick={()=>this.exampleMethod()}>Console log some text</button>
+    render() {
+        return ( <div>
+            <Navbar />
+            <MainContent />
             </div>
         )
     }

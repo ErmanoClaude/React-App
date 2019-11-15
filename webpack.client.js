@@ -1,5 +1,6 @@
 const path = require('path');
 const webpackNodeExternals = require('webpack-node-externals')
+const webConFig = require('./webConfig.json')
 module.exports = {
     target: 'node',
     entry: ['./src/client.js', './src/assets/scss/styles.scss'],
@@ -9,8 +10,7 @@ module.exports = {
         publicPath: '/build/public'
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: '/node_modules/',
@@ -19,15 +19,16 @@ module.exports = {
                         'react',
                         'stage-0',
                         ['env', {
-                            target: { browsers: ['last 2 versions']}
+                            target: {
+                                browsers: ['last 2 versions']
+                            }
                         }]
                     ]
                 }
             },
             {
                 test: /\.scss$/,
-                use: [
-                    {
+                use: [{
                         loader: 'file-loader',
                         options: {
                             name: '[name].min.css',
@@ -44,8 +45,18 @@ module.exports = {
                         loader: 'sass-loader'
                     }
                 ]
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name:'[name].[ext]',               
+                        outputPath:'assets/graphics',
+                        publicPath:webConFig.siteURL
+                    }
+                }, ],
             }
-
         ]
     }
 }

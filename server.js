@@ -25,8 +25,9 @@ app.get('*',(req,res)=>{
         <html>
             <head>
             <link href="${webConfig.siteURL}/assets/css/styles.min.css" rel="stylesheet" type="text/css" />
+            <script src="https://kit.fontawesome.com/f675cf1456.js" crossorigin="anonymous"></script>
             </head>
-            <body>
+            <body id='bg-img'>
                 <div id='root'>
                     ${ content }
                 </div>
