@@ -2,12 +2,12 @@ import React from 'react'
 import Navbar from '../components/navbarComponent'
 import MainContent from '../components/mainContentComponent'
 class Home extends React.Component {
-    exampleMethod() {
-        console.log("JS is running")
+    constructor(props){
+        super(props);
     }
     render() {
         return ( <div>
-            <Navbar />
+            <Navbar toggleMenu = {this.props.toggleMenu} showMenu = {this.props.showMenu}/>
             <MainContent />
             </div>
         )
