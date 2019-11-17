@@ -19,7 +19,7 @@ class Navbar extends Component {
                         <div className='portrait'></div>
                     </div>
                     <ul className={`menu-nav ${!this.props.showMenu? '':'show'}`}>
-                        <li className={`nav-item ${!this.props.showMenu? '':'show'}`}>
+                        <li className={`nav-item current ${!this.props.showMenu? '':'show'}`}>
                             <a href="" className="nav-link">
                                 Home
                             </a>

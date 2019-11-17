@@ -45,17 +45,14 @@ module.exports = {
                         loader: 'sass-loader'
                     }
                 ]
-            },
-            {
+            }, {
                 test: /\.(png|jpe?g|gif)$/i,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name:'[name].[ext]',               
-                        outputPath:'assets/graphics',
-                        publicPath:webConFig.siteURL
-                    }
-                }, ],
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'assets/graphics',
+                    publicPath:webConFig.siteURL + '/assets/graphics/'
+                },
             }
         ]
     }
