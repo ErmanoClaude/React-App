@@ -9,6 +9,7 @@ $siteURLAssets: "http://localhost:3000/";
 //images
 $home-image: url(../../assets/graphics/olena-sergienk-keyboard.jpg);
 $protrait-image:url(../graphics/boondocksprofile.jpg);
+$small-portrait-image: url(../graphics/boondocksprofileSmall.jpg);
 //Mixins
 @mixin easeOut {
     transition: all 0.5s ease-out;
@@ -16,7 +17,7 @@ $protrait-image:url(../graphics/boondocksprofile.jpg);
 @mixin background {
     @if $show-home-image {
         &#bg-img {
-            background: $home-image;
+            background: $home-image no-repeat;
             background-attachment: fixed;
             background-size:100%;
             height:100vh;
@@ -50,7 +51,7 @@ $protrait-image:url(../graphics/boondocksprofile.jpg);
         @content;
     }
 }
-@mixin mediaXL {
+@mixin mediaXl {
     @media screen and (min-width: 1171px) {
         @content;
     }

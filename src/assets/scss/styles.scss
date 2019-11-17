@@ -9,4 +9,7 @@
 @import './pages/homePage';
 
 //mediaQueries
-@import './mediaQueries/mobile';
+@import './mediaQueries/mediaSm';
+@import './mediaQueries/mediaMd';
+@import './mediaQueries/mediaLg';
+@import './mediaQueries/mediaXl';
