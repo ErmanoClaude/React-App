@@ -1,5 +1,5 @@
 import React from "react";
-import About from "../pages/aboutPageComponent";
+
 
 class AboutContent extends React.Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class AboutContent extends React.Component {
             Few things about me...
           </h2>
           <div className='about-info'>
-              <img src='http://localhost:3000/assets/graphics/boondocksprofile.jpg' alt='Profile image' class='bio-image'/>
+              <img src='http://localhost:3000/assets/graphics/boondocksprofile.jpg' alt='Profile image' className='bio-image'/>
               <div className="bio">
                   <h3 className="text-secondary">BIO</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur doloremque voluptate sequi ullam tempora delectus cupiditate molestias tenetur explicabo repudiandae animi sit, nihil veniam! Delectus quaerat accusamus molestiae a?</p>
