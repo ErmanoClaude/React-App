@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+import { Link } from 'react-router-dom'
 class Navbar extends Component {
     constructor(props){
         super(props)
@@ -19,25 +19,25 @@ class Navbar extends Component {
                         <div className='portrait'></div>
                     </div>
                     <ul className={`menu-nav ${!this.props.showMenu? '':'show'}`}>
-                        <li className={`nav-item current ${!this.props.showMenu? '':'show'}`}>
-                            <a href="" className="nav-link">
+                        <li className={`nav-item ${this.props.location==''? 'current':''} ${!this.props.showMenu? '':'show'}`}>
+                            <Link to="/" className="nav-link" onClick={this.props.toggleMenu}>
                                 Home
-                            </a>
+                            </Link>
                         </li>
-                        <li className={`nav-item ${!this.props.showMenu? '':'show'}`}>
-                            <a href="/about" className="nav-link">
+                        <li className={`nav-item ${this.props.location=='about'? 'current':''} ${!this.props.showMenu? '':'show'}`}>
+                            <Link to="/about" className="nav-link" onClick={this.props.toggleMenu}>
                                 About
-                            </a>
+                            </Link>
                         </li>
-                        <li className={`nav-item ${!this.props.showMenu? '':'show'}`}>
-                            <a href="/" className="nav-link">
+                        <li className={`nav-item ${this.props.location=='projects'? 'current':''} ${!this.props.showMenu? '':'show'}`}>
+                            <Link to="/" className="nav-link" onClick={this.props.toggleMenu}>
                                 Projects
-                            </a>
+                            </Link>
                         </li>
-                        <li className={`nav-item ${!this.props.showMenu? '':'show'}`}>
-                            <a href="/" className="nav-link">
+                        <li className={`nav-item ${this.props.location=='contact'? 'current':''} ${!this.props.showMenu? '':'show'}`}>
+                            <Link to="/" className="nav-link" onClick={this.props.toggleMenu}>
                                 Contact
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

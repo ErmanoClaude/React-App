@@ -1,18 +1,19 @@
 import React from 'react'
 import Navbar from '../components/navbarComponent'
-import MainContent from '../components/mainContentComponent'
-class Home extends React.Component {
-    constructor(props){
+import AboutContent from '../components/aboutContentComponent';
+
+class About extends React.Component {
+    constructor(props) {
         super(props);
     }
-    render() {
+    render(){
         return (
             <div>
                 <Navbar location={this.props.location} toggleMenu = {this.props.toggleMenu} showMenu = {this.props.showMenu}/>
-                <MainContent />
+                <AboutContent />
             </div>
         )
     }
 }
 
-export default Home;
+export default About;

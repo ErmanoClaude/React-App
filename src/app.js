@@ -1,6 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router'
 import Home from './pages/homePageComponent'
+import About from './pages/aboutPageComponent';
 
 class App extends React.Component {
     constructor(props){
@@ -18,8 +19,11 @@ class App extends React.Component {
     render(){
         return (
             <Switch>
-                <Route render = {props => (
-                    <Home {...props} toggleMenu = {this.toggleMenu} showMenu = {this.state.showMenu} />
+                <Route exact path='/' render = {props => (
+                    <Home {...props} location='' toggleMenu = {this.toggleMenu} showMenu = {this.state.showMenu} />
+                )}/>
+                <Route exact path='/about' render = {props => (
+                    <About {...props} location='about' toggleMenu = {this.toggleMenu} showMenu = {this.state.showMenu} />
                 )}/>
             </Switch>
         )
