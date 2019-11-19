@@ -1,16 +1,15 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "../components/navbarComponent";
-import ProjectsContent from "../components/projectsContentComponent";
-
-class Projects extends React.Component {
+import ContactContent from "../components/contactContentComponent";
+class Contact extends React.Component {
   constructor(props) {
     super(props);
   }
   head() {
     return (
       <Helmet>
-        <title>Projects</title>
+        <title>Contact</title>
       </Helmet>
     );
   }
@@ -23,10 +22,10 @@ class Projects extends React.Component {
           toggleMenu={this.props.toggleMenu}
           showMenu={this.props.showMenu}
         />
-        <ProjectsContent />
+        <ContactContent />
       </div>
     );
   }
 }
 
-export default Projects;
+export default Contact;

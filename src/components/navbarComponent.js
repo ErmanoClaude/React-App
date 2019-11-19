@@ -35,7 +35,7 @@ class Navbar extends Component {
                             </Link>
                         </li>
                         <li className={`nav-item ${this.props.location=='contact'? 'current':''} ${!this.props.showMenu? '':'show'}`}>
-                            <Link to="/" className="nav-link" onClick={this.props.toggleMenu}>
+                            <Link to="/contact" className="nav-link" onClick={this.props.toggleMenu}>
                                 Contact
                             </Link>
                         </li>

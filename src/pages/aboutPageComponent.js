@@ -1,19 +1,24 @@
 import React from "react";
 import Navbar from "../components/navbarComponent";
 import AboutContent from "../components/aboutContentComponent";
-import webConfig from '../../webConfig.json'
-import { Helmet } from 'react-helmet'
+import webConfig from "../../webConfig.json";
+import { Helmet } from "react-helmet";
 
 class About extends React.Component {
   constructor(props) {
     super(props);
   }
+  head() {
+    return (
+      <Helmet>
+        <title>About Me</title>
+      </Helmet>
+    );
+  }
   render() {
     return (
       <div>
-        <Helmet>
-            <title>About Me</title>
-        </Helmet>
+        {this.head()}
         <Navbar
           location={this.props.location}
           toggleMenu={this.props.toggleMenu}

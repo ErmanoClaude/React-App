@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router";
 import Home from "./pages/homePageComponent";
 import About from "./pages/aboutPageComponent";
 import Projects from "./pages/projectsPageComponent";
+import Contact from "./pages/contactPageComponent";
 
 class App extends React.Component {
   constructor(props) {
@@ -52,6 +53,18 @@ class App extends React.Component {
             <Projects
               {...props}
               location="projects"
+              toggleMenu={this.toggleMenu}
+              showMenu={this.state.showMenu}
+            />
+          )}
+        />
+        <Route
+          exact
+          path='/contact'
+          render={props => (
+            <Contact
+              {...props}
+              location='contact'
               toggleMenu={this.toggleMenu}
               showMenu={this.state.showMenu}
             />

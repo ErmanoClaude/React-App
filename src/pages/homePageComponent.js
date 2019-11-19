@@ -6,15 +6,18 @@ import webConfig from "../../webConfig.json";
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    
+  }
+  head() {
+    return (
+      <Helmet>
+        <title>Welcome To My Portfolio</title>
+      </Helmet>
+    );
   }
   render() {
     return (
       <div>
-
-        <Helmet>
-            <title>Welcome To My Portfolio</title>
-        </Helmet>
+        {this.head()}
         <Navbar
           location={this.props.location}
           toggleMenu={this.props.toggleMenu}
