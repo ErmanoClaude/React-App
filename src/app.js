@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router";
 import Home from "./pages/homePageComponent";
 import About from "./pages/aboutPageComponent";
+import Projects from "./pages/projectsPageComponent";
 
 class App extends React.Component {
   constructor(props) {
@@ -15,9 +16,7 @@ class App extends React.Component {
     this.setState({
       showMenu: !this.state.showMenu
     });
-  };
-
-
+  }
 
   render() {
     return (
@@ -41,6 +40,18 @@ class App extends React.Component {
             <About
               {...props}
               location="about"
+              toggleMenu={this.toggleMenu}
+              showMenu={this.state.showMenu}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/project"
+          render={props => (
+            <Projects
+              {...props}
+              location="projects"
               toggleMenu={this.toggleMenu}
               showMenu={this.state.showMenu}
             />

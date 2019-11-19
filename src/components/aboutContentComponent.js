@@ -8,7 +8,6 @@ class AboutContent extends React.Component {
     return (
       <div>
         <div className="overlay"></div>
-
         <main id="about">
           <h1 className="lg-heading">
             About
@@ -21,7 +20,6 @@ class AboutContent extends React.Component {
               alt="Ermano Claude"
               className="bio-image"
             />
-
             <div className="bio">
               <h3 className="text-secondary">BIO</h3>
               <p>
