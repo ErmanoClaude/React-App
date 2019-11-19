@@ -11,10 +11,9 @@ export default (req, context) => {
   );
 return ` <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="${webConfig.siteURL}/assets/css/styles.min.css" rel="stylesheet" type="text/css" />
-        <script src="https://kit.fontawesome.com/f675cf1456.js" crossorigin="anonymous"></script>
+      <meta charset="UTF-8" />
+      <link href=${webConfig.siteURL}/assets/css/styles.min.css rel="stylesheet" type="text/css"/>
+      <script src="https://kit.fontawesome.com/f675cf1456.js" crossorigin="anonymous"></script>
     </head>
     <body id='bg-img'>
         <div id='root'>

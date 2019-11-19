@@ -3,7 +3,7 @@ const webpackNodeExternals = require('webpack-node-externals')
 const webConFig = require('./webConfig.json')
 module.exports = {
     target: 'node',
-    entry: ['./src/client.js', './src/assets/scss/styles.scss', './src/assets/scss/about.scss'],
+    entry: ['./src/client.js', './src/assets/scss/styles.scss'],
     output: {
         filename: 'client_bundle.js',
         path: path.resolve(__dirname, 'build/public'),
