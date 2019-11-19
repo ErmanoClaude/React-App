@@ -1,4 +1,9 @@
 // Desktop & Laptops
 @include mediaLg {
-    
+    body {
+        overflow: auto;
+    }
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

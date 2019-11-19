@@ -19,7 +19,6 @@ class Projects extends React.Component {
           showMenu={this.props.showMenu}
         />
         <ProjectsContent />
-        <h1>WE about the make this page now</h1>
       </div>
     );
   }

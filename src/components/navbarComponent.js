@@ -30,7 +30,7 @@ class Navbar extends Component {
                             </Link>
                         </li>
                         <li className={`nav-item ${this.props.location=='projects'? 'current':''} ${!this.props.showMenu? '':'show'}`}>
-                            <Link to="/" className="nav-link" onClick={this.props.toggleMenu}>
+                            <Link to="/project" className="nav-link" onClick={this.props.toggleMenu}>
                                 Projects
                             </Link>
                         </li>
