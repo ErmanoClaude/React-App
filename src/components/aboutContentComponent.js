@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import webConfig from '../../webConfig.json';
 class AboutContent extends React.Component {
   constructor(props) {
     super(props);
@@ -16,7 +17,7 @@ class AboutContent extends React.Component {
           <h2 className="sm-heading">Let me tell you a few things...</h2>
           <div className="about-info">
             <img
-              src="http://localhost:3000/assets/graphics/boondocksprofile.jpg"
+              src={`${webConfig.siteURL}/assets/graphics/boondocksprofile.jpg`}
               alt="Ermano Claude"
               className="bio-image"
             />
