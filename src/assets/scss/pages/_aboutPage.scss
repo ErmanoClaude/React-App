@@ -3,7 +3,8 @@
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "job1 job2 job3";
+    ". skills-title skills-title"
+    ". front-end backend";
   grid-template-columns: repeat(3, 1fr);
   .bio-image {
     grid-area: bioimage;
@@ -15,18 +16,33 @@
     grid-area: bio;
     font-size: 1.5rem;
   }
-  .job-1 {
-    grid-area: job1;
+  .skills-title{
+    grid-area: skills-title;
+    font-weight: 600;
+    text-align: center;
+    color:$secondary-color;
   }
-  .job-2 {
-    grid-area: job2;
+  .front-end {
+    grid-area: front-end;
+    span {
+      color:$secondary-color;
+    }
   }
-  .job-3 {
-    grid-area: job3;
+  .backend {
+    grid-area: backend;
   }
-  .job {
+  .skills {
+    text-align: center;
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+    li {
+      list-style: none;
+    }
+    h3 {
+      font-weight: 500;
+      color:$secondary-color;
+    }
   }
+
 }

@@ -10,6 +10,14 @@ $siteURLAssets: "http://localhost:3000/";
 $home-image: url(../../assets/graphics/olena-sergienk-keyboard.jpg);
 $protrait-image:url(../graphics/boondocksprofile.jpg);
 $small-portrait-image: url(../graphics/boondocksprofileSmall.jpg);
+$yelpcampblog:url(../graphics/yelpcampblog.jpg);
+$nyc-gallery: url(../graphics/NYCGallery.jpg);
+$imperial-to-metric:url(../graphics/Metric-To-Imperial-Converter.jpg);
+$color-game:url(../graphics/ColorGame.jpg);
+$candy:url(../graphics/candy.jpg);
+$url-shortener: url(../graphics/UrlShortener.jpg);
+$search-movie-api:url(../graphics/SearchMovieAPI.jpg);
+$excersieAPI:url(../graphics/excersieAPI.jpg);
 //Mixins
 @mixin easeOut {
     transition: all 0.5s ease-out;
@@ -22,7 +30,7 @@ $small-portrait-image: url(../graphics/boondocksprofileSmall.jpg);
             background-size:100%;
             height:100vh;
             .overlay {
-                position: absolute;
+                position: fixed;
                 top:0;
                 right: 0;
                 width: 100%;
