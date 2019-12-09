@@ -1,8 +1,5 @@
-import React from "react";
-import Navbar from "../components/navbarComponent";
-import MainContent from "../components/mainContentComponent";
-import { Helmet } from "react-helmet";
-import webConfig from "../../webConfig.json";
+import React from 'react'
+
 class Home extends React.Component {
   constructor(props) {
     super(props);

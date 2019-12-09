@@ -1,9 +1,6 @@
-import React from "react";
-import { Switch, Route } from "react-router";
-import Home from "./pages/homePageComponent";
-import About from "./pages/aboutPageComponent";
-import Projects from "./pages/projectsPageComponent";
-import Contact from "./pages/contactPageComponent";
+import React from 'react'
+import { Switch, Route } from 'react-router'
+import Home from './pages/homePageComponent'
 
 class App extends React.Component {
   constructor(props) {
