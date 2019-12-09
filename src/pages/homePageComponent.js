@@ -1,32 +1,20 @@
-import React from "react";
-import Navbar from "../components/navbarComponent";
-import MainContent from "../components/mainContentComponent";
-import { Helmet } from "react-helmet";
-import webConfig from "../../webConfig.json";
+import React from 'react'
+
 class Home extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  head() {
-    return (
-      <Helmet>
-        <title>Welcome To My Portfolio</title>
-      </Helmet>
-    );
-  }
-  render() {
-    return (
-      <div>
-        {this.head()}
-        <Navbar
-          location={this.props.location}
-          toggleMenu={this.props.toggleMenu}
-          showMenu={this.props.showMenu}
-        />
-        <MainContent />
-      </div>
-    );
-  }
+    exampleMethod(){
+        console.log("JS is running")
+    }
+    render(){
+        return(
+            <div>
+                <h1>
+                    My Home Page
+                </h1>
+                <p>Some Content</p>
+                <button onClick={()=>this.exampleMethod()}>Console log some text</button>
+            </div>
+        )
+    }
 }
 
 export default Home;
