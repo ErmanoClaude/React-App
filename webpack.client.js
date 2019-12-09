@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path');//s
 const webpackNodeExternals = require('webpack-node-externals')
 const webConFig = require('./webConfig.json')
 module.exports = {

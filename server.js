@@ -17,7 +17,7 @@ app.get('*',(req,res)=>{
 })
 
 app.listen(PORT, ()=>{
-    console.log(`This app is running on PORT ${PORT}`);
+    console.log(`This app is running on PORTs ${PORT}`);
 })
 
 

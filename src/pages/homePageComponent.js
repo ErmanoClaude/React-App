@@ -10,7 +10,7 @@ class Home extends React.Component {
   head() {
     return (
       <Helmet>
-        <title>Welcome To My Portfolio</title>
+        <title>Welcome To My Portfolio.</title>
       </Helmet>
     );
   }
