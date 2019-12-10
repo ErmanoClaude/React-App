@@ -3,9 +3,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import renderer from './src/helpers/renderer';
 import helmet from 'helmet';
-
 import webConfig from './webConfig.json'
-import force from "express-force-domain";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
