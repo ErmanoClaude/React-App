@@ -3,7 +3,8 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import renderer from './src/helpers/renderer';
 import helmet from 'helmet';
-import webConfig from './webConfig.json'
+import express_enforces_ssl from 'express-enforces-ssl'
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
