@@ -2,6 +2,7 @@ import 'babel-polyfill';
 import express from 'express';
 import bodyParser from 'body-parser'
 import renderer from './src/helpers/renderer'
+import helmet from 'helmet'
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -9,6 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('build/public'))// this makes it publically avaliable
+app.use(helmet());
 
 app.get('*',(req,res)=>{
     const context = {};
