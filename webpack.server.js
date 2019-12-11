@@ -26,5 +26,10 @@ module.exports = {
             }
         ]
     },
-    externals: [webpackNodeExternals()]
+    externals: [webpackNodeExternals()],
+    plugins: [
+        new CopyPlugin([
+            { from:'./android-chrome-512x512.png', to:'./build/public/assets/grapics' }
+        ])
+    ]
 }

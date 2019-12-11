@@ -56,10 +56,5 @@ module.exports = {
                 },
             }
         ]
-    },
-    plugins: [
-        new CopyPlugin([
-            { from:'./android-chrome-512x512.png', to:'./build/public/assets/grapics' }
-        ])
-    ]
+    }
 }
