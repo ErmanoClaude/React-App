@@ -1,8 +1,5 @@
 const path = require('path');
-const webpackNodeExternals = require('webpack-node-externals');
 const webConFig = require('./webConfig.json');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-
 module.exports = {
     target: 'node',
     entry: ['./src/client.js', './src/assets/scss/styles.scss'],
@@ -57,10 +54,5 @@ module.exports = {
                 },
             }
         ]
-    },
-    plugins:[
-        new CopyWebpackPlugin([
-            { from:'./src/assets/graphics/favicon.png', to:'./assets/graphics' }
-        ])
-    ]
+    }
 }

@@ -14,7 +14,7 @@ export default (req, context) => {
       <meta charset="UTF-8" />
       <link href=${webConfig.siteURL}/assets/css/styles.min.css rel="stylesheet" type="text/css"/>
       <script src="https://kit.fontawesome.com/f675cf1456.js" crossorigin="anonymous"></script>
-      <link rel="shortcut icon" type="image/png" href="/assets/graphics/favicon.png">
+      <link rel="shortcut icon" type="image/png" href="${webConfig.siteURL}/assets/graphics/favicon.png" />
     </head>
     <body id='bg-img'>
         <div id='root'>
