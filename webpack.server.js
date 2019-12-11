@@ -1,5 +1,6 @@
 const path = require('path');
-const webpackNodeExternals = require('webpack-node-externals')
+const webpackNodeExternals = require('webpack-node-externals');
+const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
     target: 'node',
     entry: './server.js',

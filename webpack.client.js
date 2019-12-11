@@ -1,7 +1,7 @@
 const path = require('path');
 const webpackNodeExternals = require('webpack-node-externals');
 const webConFig = require('./webConfig.json');
-const CopyPlugin = require('copy-webpack-plugin');
+
 module.exports = {
     target: 'node',
     entry: ['./src/client.js', './src/assets/scss/styles.scss'],
