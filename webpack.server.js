@@ -1,6 +1,6 @@
 const path = require('path');
 const webpackNodeExternals = require('webpack-node-externals');
-const CopyPlugin = require('copy-webpack-plugin');
+
 module.exports = {
     target: 'node',
     entry: './server.js',
@@ -27,10 +27,5 @@ module.exports = {
             }
         ]
     },
-    externals: [webpackNodeExternals()],
-    plugins: [
-        new CopyPlugin([
-            { from:'./android-chrome-512x512.png', to:'./build/public/assets/grapics' }
-        ])
-    ]
+    externals: [webpackNodeExternals()]
 }
