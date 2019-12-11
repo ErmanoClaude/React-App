@@ -1,5 +1,6 @@
 {
     "siteURL": "https://secure-basin-76515.herokuapp.com/",
     "backUp":"https://secure-basin-76515.herokuapp.com/",
-    "customUrl":"https://www.ermanoclaude.com"
+    "customUrl":"https://www.ermanoclaude.com",
+    "localhost":"http://localhost:3000/"
 }
