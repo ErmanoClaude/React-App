@@ -18,11 +18,6 @@ $candy:url(../graphics/candy.jpg);
 $url-shortener: url(../graphics/UrlShortener.jpg);
 $search-movie-api:url(../graphics/SearchMovieAPI.jpg);
 $excersieAPI:url(../graphics/excersieAPI.jpg);
-$favicon1:url(../../../favicon-16x16.png);
-$favicon2:url(../../../favicon-32x32.png);
-$favicon3:url(../../../android-chrome-192x192.png);
-$favicon4:url(../../../android-chrome-512x512.png);
-$favicon5:url(../../../apple-touch-icon.png);
 //Mixins
 @mixin easeOut {
     transition: all 0.5s ease-out;
